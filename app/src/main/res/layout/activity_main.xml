@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/currentAudioPathTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonStarRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start recording" />
+
+        <Button
+            android:id="@+id/buttonStopRec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop recording" />
+
+        <Button
+            android:id="@+id/buttonStartPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start playing" />
+
+        <Button
+            android:id="@+id/buttonStopPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop playing" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonNextScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Další obrazovka"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
